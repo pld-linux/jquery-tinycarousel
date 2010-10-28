@@ -27,7 +27,7 @@ webdesigners a powerfull way of enhancing a websites user interface.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_appdir}
-cp -a jquery.%{plugin}.min.js $RPM_BUILD_ROOT%{_appdir}/%{plugin}.js
+cp -a %{SOURCE0} $RPM_BUILD_ROOT%{_appdir}/%{plugin}.js
 
 %clean
 rm -rf $RPM_BUILD_ROOT
